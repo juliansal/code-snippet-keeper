@@ -1,21 +1,21 @@
 body {
-    margin: auto;
     padding: 0;
 }
 
 #snippets {
-    padding: 12px;
+    /* padding: 12px; */
     border-radius: 4px;
-    box-shadow: black;
+    box-shadow: #163143;
     font-size: 26px;
     font-family: 'Menlo', 'Monaco', sans-serif;
 }
 
 .snippet {
-    background-color: aquamarine;
+    background-color: #3FD8C9;
     display: flex;
     padding: 12px;
-    margin: 12px;
+    margin: 12px 0;
+    color: #fff;
 }
 
 .snippet-name, .snippet-cmd {
@@ -27,5 +27,35 @@ body {
 }
 
 .snippet-copy {
-    margin: 0px 0px 0px auto;
+    margin-right: 8px;
+}
+
+.snippet-delete {
+    margin: 0px 20px 0px auto;
+}
+
+.to-right {
+    text-align: right;
+}
+
+/* 
+Button Styles 
+*/
+.button.button-outline {
+    border-color: #163143;
+    color: #163143;
+}
+
+.heading-btn {
+    margin-top: 12px;
+}
+
+.snippet-copy > button {
+    background-color: #163143;
+    border-color: #163143; 
+}
+
+.snippet-delete > button {
+    background-color: #F0675C;
+    border-color: #F0675C; 
 }

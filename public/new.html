@@ -3,31 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snippet Keeper</title>
+    <title>Add New Snippet</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css" />
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script defer src="/__/firebase/4.10.1/firebase-app.js"></script>
     <script defer src="/__/firebase/4.10.1/firebase-auth.js"></script>
 	<script defer src="/__/firebase/4.10.1/firebase-firestore.js"></script>
     <script defer src="/__/firebase/init.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="column column-50">
-                <h1>Snippet Keeper</h1>
-			</div>
-            <div class="column to-right">
-                <a class="button button-outline heading-btn" href="/new.html">New</a>
-			</div>
-		</div>
-		
-        <div id="snippets">
-        </div>
-    </div>
-    <script defer src="app.js"></script>
+	<div class="container">
+        <h1>Add New Snippet</h1>
+
+        <form id="addSnippet">
+            <label>Snippet Name</label>
+            <input type="text" name="nameField" /><br />
+            <label>Command String</label>
+            <textarea name="commandField"></textarea><br />
+            <input type="submit" value="Save" />
+        </form>
+	</div>
+
+    <script defer src="firebase.js"></script>
 </body>
 </html>
